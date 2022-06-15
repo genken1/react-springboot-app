@@ -1,0 +1,11 @@
+#configuration
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:${SPRING_DATASOURCE_PORT:3306}/${SPRING_DATASOURCE_DB_NAME:fullstack}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
